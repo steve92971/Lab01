@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ch1 {
+
+     public static void main(String[] args) {
+
+        Scanner scn=new Scanner(System.in);
+        System.out.println("請輸入第一組的x和y座標:");
+        double x1=scn.nextDouble();
+        double y1=scn.nextDouble();
+        System.out.println("請輸入第二組的x和y座標:"); 
+        double x2=scn.nextDouble();
+        double y2=scn.nextDouble();
+        double a=Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
+        System.out.printf("介於(%.2f,%.2f)和(%.2f,%.2f)之間的距離是%.2f",x1,y1,x2,y2,a);
+        //java格式可用%來控制，後補上變數，計算時注意用double
+        scn.close();
+     }
+
+  
+}
