@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ch1 {
+
+    public static void main(String[] args) {
+        Scanner scn=new Scanner(System.in);
+        System.out.println("請輸入您的姓名:");
+        String  name=scn.nextLine();
+        System.out.printf("Hi,%s,請輸入您的銅板的個數:\n",name);
+        System.out.println("請輸入1元的數量:");
+        int n1=scn.nextInt();
+        System.out.println("請輸入5元的數量:");
+        int n2=scn.nextInt();
+        System.out.println("請輸入10元的數量:");
+        int n3=scn.nextInt();
+        System.out.println("請輸入50元的數量:");
+        int n4=scn.nextInt();
+        int total=n1*1+n2*5+n3*10+n4*50;
+        int a=total/1000;//千
+        total%=1000;//讓千元清掉
+        int b=total/100;
+        total%=100;
+        int c=total/10;
+        total%=10;//餘數剩下0，所以不用另外計算,讓十元清掉
+        System.out.printf("您的錢總共有:%d 千 %d 百 %d 十 %d 元",a,b,c,total);
+//重打
+
+    }
+}
