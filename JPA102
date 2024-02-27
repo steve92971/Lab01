@@ -13,3 +13,19 @@ public class ch1 {
         scn.close();
     }
 }
+/*
+另一種寫法
+import java.util.Scanner;
+
+public class ch2 {
+
+     public static void main(String[] args) {
+        Scanner scn=new Scanner(System.in);
+        System.out.println("pleas input:");
+        float a=scn.nextFloat();
+        double p=a*2.20462;
+        System.out.printf("%.1f kg = %.4f ponds",a,p);
+        scn.close();
+     }
+}
+*/
