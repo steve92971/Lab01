@@ -1,11 +1,20 @@
-public class ch1 {
+public class JPA107 {
+    public static void main(String argv[]) {
+        int action = 1, skill = 2, teamgame = 3;
 
-    public static void main(String[] args) {
-        int a=1;
-        int s=2;
-        int t=3;
-        System.out.printf("The basketball grade is %d\n",a+s+t);
-        System.out.printf("The baseball grade is %d",10+s+t);
-        //換行是\n不是/n，打在%後面
+        System.out.println("The basketball grade is " + Basketball.calGrade(action, skill, teamgame));
+        System.out.println("The baseball grade is " + Baseball.calGrade(skill, teamgame));
+    }
+}
+
+class Basketball {
+    public static int calGrade(int a, int s, int t) {
+        return a + s + t;
+    }
+}
+
+class Baseball {
+    public static int calGrade(int s, int t) {
+        return 10 + s + t;
     }
 }
